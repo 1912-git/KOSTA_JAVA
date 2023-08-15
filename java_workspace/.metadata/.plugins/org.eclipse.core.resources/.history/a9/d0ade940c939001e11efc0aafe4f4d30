@@ -1,0 +1,25 @@
+package Intro;
+
+public class MyInfo {
+
+	public static void main(String[] args) {
+		//이름을 저장할 변수 선언하여 본인이름 할당
+		//나이를 저장할 변수 선언하여 본인나이 할당
+		//키를 저장할 변수 선언하여 본인키 소숫점까지 할당
+		//남여 구분을 저장할 변수를 선언하여 본인 성별 할당 'F' or'M'
+		String name="박철현";
+		String age="25";//문자열 , int age=24; 숫자로도 가능
+		float h=171.1f;
+		double h2=180.5d;
+		char g= 'M';
+		
+		System.out.println("이름:"+name);
+		System.out.println("나이:"+age);
+		System.out.println("키:"+h);
+		System.out.println("키 희망:"+h2);
+		System.out.println("성별:"+g);
+		System.out.println(String.format("%s,%s,%f,%f,%c",name,     age,h,h2,g));
+		
+	}
+
+}

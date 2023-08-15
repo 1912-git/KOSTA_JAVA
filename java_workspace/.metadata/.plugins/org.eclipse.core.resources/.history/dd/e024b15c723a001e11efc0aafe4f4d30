@@ -1,0 +1,22 @@
+package Variable;
+public class CastTest {
+
+	public static void main(String[] args) {
+		
+		byte bt = 10;
+		int i = bt; // 자동 형변환
+		byte bt2 = (byte) i;
+
+		short bt3 = (short) i;
+
+		float f = i;
+
+		int i2 = (int) f; // 소숫점 잘림
+
+		double d = f;
+		float f2 = (float) d; // 작은 타입에서 큰타입 형변환
+		
+		
+	}
+
+}

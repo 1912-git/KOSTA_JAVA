@@ -1,0 +1,44 @@
+package IfSwitch;
+
+public class ifTest1 {
+
+	public static void main(String[] args) {
+		// if문
+		// if문의 경우 앞쪽에서 걸려 실행된다면 다른 if/else문을 실행시키지 않음
+		int i = -10;
+		if (i > 0) {
+			System.out.println("양수"); // 실행해야 하는 조건이 하나만이라면 중괄호 생략 가능
+		} else if (i == 0) {
+			System.out.println("0");
+		} else {
+			System.out.println("음수");
+		}
+
+		// 예제)
+		int j = 50;
+		String grade = "";
+		if (j >= 90) {
+			grade = "A";
+		} else if (j >= 80) {
+			grade = "B";
+		} else if (j >= 70) {
+			grade = "C";
+		} else if (j >= 60) {
+			grade = "D";
+		} else {
+			grade = "F";
+		}
+
+		if (!grade.equals("F") && j % 10 >= 7) {
+			grade += "+";
+		} else if (!grade.equals("F") && j % 10 >= 4) {
+			grade += "0";
+		} else if (!grade.equals("F")) {
+			grade += "-";
+		} else {
+			grade = "F";
+		}
+		System.out.println(grade);
+	}
+
+}

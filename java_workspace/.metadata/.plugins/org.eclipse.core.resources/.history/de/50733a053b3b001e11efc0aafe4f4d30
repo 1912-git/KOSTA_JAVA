@@ -1,0 +1,25 @@
+package Variable;
+public class CastTest {
+
+	public static void main(String[] args) {
+		
+		byte bt = 10;
+		int i = bt; // 자동 형변환
+		byte bt2 = (byte) i;
+
+		short bt3 = (short) i;
+
+		float f = i;
+
+		int i2 = (int) f; // 소숫점 잘림
+
+		double d = f;
+		float f2 = (float) d; // 큰 타입에서 작은타입 형변환
+		
+		// (주의) long과 float : 크기는 long이 더 크지만 자동 형변환은 float이 가능함.
+        long l = (long)f;
+        float  f3 = l;
+		
+	}
+
+}

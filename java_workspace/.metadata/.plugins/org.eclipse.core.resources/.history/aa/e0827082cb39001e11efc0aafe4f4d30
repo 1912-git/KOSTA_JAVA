@@ -1,0 +1,21 @@
+package Operator;
+
+public class OperTest1 {
+
+	public static void main(String[] args) {
+		int n = 10;
+		System.out.println(n++);
+		n--; // n=n+1;
+		
+		System.out.println(n);
+		++n; // n=n+1;
+		System.out.println(n);
+
+		int m = 100;
+		int res = ++m; // 증가된 값을 연산의 결과로 준다.
+		System.out.println(res);
+		res = m++; // 증가되기 이전 값을 연산의 결과로 준다.
+		System.out.println(res);
+	}
+
+}

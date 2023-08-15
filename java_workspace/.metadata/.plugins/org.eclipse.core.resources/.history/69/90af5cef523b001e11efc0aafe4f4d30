@@ -1,0 +1,12 @@
+package Chap3;
+
+public class Q10 {
+
+	public static void main(String[] args) {
+		char ch = 'A';
+		char lowerCase = ( /* (1) */ ) ? ( /* (2) */ ) : ch;
+		System.out.println("ch:"+ch);
+		System.out.println("ch to lowerCase:"+lowerCase);
+	}
+
+}
