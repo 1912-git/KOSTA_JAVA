@@ -20,7 +20,9 @@ public class Q9 {
 		System.out.println();
 		for (int i = 0; i < star.length; i++) {
 			for (int j = 0; j < star[i].length; j++) {
-				
+				int x = j;
+				int y = star.length-1-i;
+				result[x][y]=star[i][j];	
 			}
 		}
 		for (int i = 0; i < result.length; i++) {
