@@ -15,23 +15,35 @@ public class Q10_1 {
 		
 		for(int i = 0;i < result.length();i++) {
 			char ch = result.charAt(i);
+			int idx=-1;
+//			for(int j=0; j<abcCode.length;j++) {
+//				if(ch==abcCode[j]) {
+//					idx=j;
+//					break;
+//				}
+//			}
+//			src+='a'+idx;
 			
 			if(ch >= 'a' && ch <= 'z') {
 				for(int j = 0;j < numCode.length;j++) {
 					if(ch == numCode[j]) {
-						src += j;
+						src += j;  //idx=j;
+									//break;
 					}
 				}
 			} else {
 				for(int j = 0;j < abcCode.length;j++) {
 					if(ch == abcCode[j]) {
+						//idx=j;
+						//break;
 						src += (char) (j + 'a');
 					}
 				}
+				//src+=(char)('a'+idx)
 			}
 		}
-		
-		System.out.println(src);
+		System.out.println("result:"+result);
+		System.out.println("src:"+src);
 		
 		// src: abc123
 	}
